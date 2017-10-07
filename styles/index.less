@@ -1,0 +1,23 @@
+@border-color:#e1e4e8;
+@background-color:#f6f8fa;
+@blue:#0366d6;
+
+.top{
+    padding:10px;
+    border:1px solid @border-color;
+    height: 100%;
+    > div,>button{
+        //direct children div and direct children button
+        border:1px solid @blue;
+        padding:20px;
+        margin-bottom: 20px;
+    }
+    // > div:not(:last-child){
+    //     background-color: #f6f8fa
+    // }
+    > div{
+        &:not(:last-child){
+            background-color: @background-color;
+        }
+    }
+}
