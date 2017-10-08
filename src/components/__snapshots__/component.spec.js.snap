@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test component render 1`] = `
+<div>
+  react component
+</div>
+`;
+
+exports[`test component render async 1`] = `
+<div>
+  react component
+</div>
+`;

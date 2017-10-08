@@ -9,7 +9,7 @@ gulp.task('compile:less', () => {
     return gulp.src(['src/styles/**/*.less'])
         .pipe(less())
         .pipe(concat('style.css'))
-        .pipe(gulp.dest('dist/styles/'))
+        .pipe(gulp.dest('dist/'))
 })
 
 gulp.task('default', ['compile:less'], () => {
