@@ -6,12 +6,12 @@ const concat= require('gulp-concat');
 
 
 gulp.task('compile:less', () => {
-    return gulp.src(['styles/**/*.less'])
+    return gulp.src(['src/styles/**/*.less'])
         .pipe(less())
         .pipe(concat('style.css'))
-        .pipe(gulp.dest('styles/'))
+        .pipe(gulp.dest('dist/styles/'))
 })
 
 gulp.task('default', ['compile:less'], () => {
-    gulp.watch('styles/**/*.less', ['compile:less']);
+    gulp.watch('src/styles/**/*.less', ['compile:less']);
 });
