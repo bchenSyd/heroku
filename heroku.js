@@ -1,4 +1,4 @@
-import express from 'express';
+const express = require('express');
 const port = process.env.port || 8000;
 
 const app = express();
