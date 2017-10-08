@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node heroku.js",
     "start-local": "webpack-dev-server  --progress --color --bail ",
-    "build": "webpack --progress --clor --bail",
+    "build": "webpack --progress --color --bail",
     "clean": "rimraf dist/",
     "build-gulp": "gulp",
     "test":"jest"
